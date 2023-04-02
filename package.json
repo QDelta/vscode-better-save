@@ -17,9 +17,19 @@
         "commands": [
             {
                 "command": "better-save.save",
-                "title": "better-save: Save if modified"
+                "title": "better-save: Save if content changed"
             }
-        ]
+        ],
+        "configuration": {
+            "title": "better-save",
+            "properties": {
+                "better-save.promptDirty": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Prompt when saving a dirty, content unchanged file"
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
